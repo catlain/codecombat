@@ -217,11 +217,16 @@ block content
           
       h4(data-i18n="teacher.wd1")
       ul
+        // We are not done with WD1 curriculum guide yet
+        //li
+        //  - var wd1URL = "/teachers/resources/wd1";
+        //  - if (me.get('preferredLanguage') == 'pt-BR' || me.get('preferredLanguage') == 'pt-PT')
+        //  -     wd1URL += '-pt-BR'
+        //  a(href=wd1URL)
+        //    span(data-i18n="teacher.wd1_curriculum")
+        //  p(data-i18n="teacher.wd1_curriculum_desc")
         li
-          - var wd1URL = "/teachers/resources/wd1";
-          - if (me.get('preferredLanguage') == 'pt-BR' || me.get('preferredLanguage') == 'pt-PT')
-          -     wd1URL += '-pt-BR'
-          a(href=wd1URL)
+          a(href="/teachers/resources/wd1guide")
             span(data-i18n="teacher.wd1_curriculum")
           p(data-i18n="teacher.wd1_curriculum_desc")
         li
